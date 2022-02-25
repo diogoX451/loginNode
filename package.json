@@ -5,8 +5,7 @@
   "author": "Diogo Almeida <69609025+diogoX451@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/index.js"
-  
+    "dev": "nodemon index.js"
   },
   "dependencies": {
     "body-parser": "^1.19.2",

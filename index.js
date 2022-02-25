@@ -20,10 +20,11 @@ app.set('views', path.join(__dirname,'/views'));
 
 // rota da pasta Views
 app.post('/', (req,res)=> {
-    if(req.body.password == password && req.body.text == login){
+    if(req.body.password == password && req.body.user == login){
         //confirmação de login
-        req.session.text = login;
+        req.session.user = login;
         res.render('logado'); 
+        console.log(req.body.user);
     }else {
         res.render('index'); 
     } 
